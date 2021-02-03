@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:rgba(191, 189, 204, 0.6);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content{
+    margin-top: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__wrapper{
+    width: 600px;
+    height: auto;
+    padding: 60px 100px 35px 100px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: linear-gradient(281.42deg, rgba(137, 0, 201, .6545) -3.9%, rgba(228, 33, 33, .6314) 112.55%);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+}
+.app__inner{
+    display: flex;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tasks__title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(265, 265, 265);
 }
 
-.App-link {
-  color: #61dafb;
+.task__item{
+    width: auto;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgba(265, 265, 265, 0.9);
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .25);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task__text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: #404040
+}
+
+.task__icon{
+    align-self: center;
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    fill: rgb(222,110,112);
+    margin: 0 10px 3px 0;
+}
+
+.addtask__block{
+    margin-top: 60px;
+}
+
+.addtask__title{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(265, 265, 265);
+}
+
+.addtask__input{
+    margin-top: 12px;
+}
+
+.addtask__input input{
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: #404040;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    background: rgba(265, 265, 265, 0.9);
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .25);
+}
+
+
+.addtask__button button{
+    font-size: 15px;
+    color: #404040;
+    font-weight: 400;
+    margin-top: 12px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: rgba(265, 265, 265, 0.8);
+}
+
+.addtask__button button:hover{
+    background: rgba(265, 265, 265, 0.92);
+}
+
+.tasks__empty{
+    color: rgb(265, 265, 265);
+    font-size: 18px;
+    margin-top: 30px;
+    padding-left: 10px;
 }
